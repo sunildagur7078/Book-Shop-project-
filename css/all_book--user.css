@@ -1,0 +1,224 @@
+.container {
+  /* 1140px */
+  /* max-width: 150rem; */
+  padding: 2rem 12rem;
+  margin: 0 auto;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.heading-secondary {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.flex_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.icon_grid {
+  width: 3.2rem;
+  height: 3.2rem;
+  --ionicon-stroke-width: 3rem;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.icon_grid:hover {
+  color: #daa556;
+  transform: rotate(180deg);
+}
+
+.main_container {
+  /* padding: 0 4rem; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  row-gap: 6rem;
+  /* background-color: rgb(137, 239, 86); */
+  border-radius: 1rem;
+}
+
+.book_container {
+  /* box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1); */
+  /* padding: 2rem; */
+  border-radius: 1rem 1rem;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 140px;
+  align-content: space-between;
+  justify-items: start;
+  gap: 1.5rem;
+}
+.book_container:hover {
+  /* box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1); */
+}
+.box_img {
+  /* border: 2px solid plum; */
+  position: relative;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  background-color: #f3f3f9;
+  padding: 2.8rem;
+}
+
+.icon_del {
+  /* background-color: plum; */
+}
+/* .del {
+  text-decoration: none;
+  color: #444;
+  font-size: 2.6rem;
+} */
+
+.icon {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  --ionicon-stroke-width: 3rem;
+  color: #000000;
+  z-index: 2;
+  cursor: pointer;
+  transform: translateX(0px) scale(0.9);
+  transition: all 0.2s ease-out;
+}
+
+.icon ion-icon {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon::before {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: #f3f3f9fa;
+  border-radius: 50rem;
+  z-index: -2;
+}
+
+.icon:hover {
+  transform: translateY(5px) scale(1);
+}
+
+.book_img {
+  /* object-fit: cover;
+    background-position: center;
+    background-size: cover; */
+  max-width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 1rem 1rem;
+  /* padding: 0 0 1rem 0; */
+  transition: all 0.3s ease;
+  box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.25);
+}
+.book_img:hover {
+  transform: translateY(-0.2rem) scale(1.1);
+}
+
+.box_txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* gap: 1rem; */
+  width: 100%;
+  height: 100%;
+  /* padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem; */
+
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.box_txt .cate {
+  /* width: 8rem; */
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  color: #333;
+  background-color: #f3f3f9;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.box_txt h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.box_txt h4 {
+  font-size: 1.8rem;
+  display: block;
+  font-weight: 500;
+}
+.box_txt span {
+  color: #f6592b;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/** Icon-Star  */
+.icon_star {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.icon_star ion-icon {
+  width: 2rem;
+  height: 2rem;
+  --ionicon-stroke-width: 3rem;
+}
+.icon_star:hover {
+  color: #daa556;
+  /* transform: rotate(180deg); */
+}
+
+/** button  */
+.btn_book {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 3.5rem;
+  font-size: 1.8rem;
+  border: none;
+  font-family: inherit;
+  background-color: #111;
+  color: #fff;
+  border-style: none;
+  text-decoration: none;
+  border-radius: 1.6rem;
+
+  transition: all 0.5s ease;
+  /* margin-top: 2rem; */
+}
+
+.btn_book:hover,
+.btn_book:active {
+  cursor: pointer;
+  background-color: #c5c5fb;
+  color: #333;
+  box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 0.2);
+}
